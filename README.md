@@ -13,6 +13,8 @@ This notebook represents the final project in Module 3 of Flatiron's Data Scienc
 
 In this project, I will be working with Mushroom Classification. This dataset includes descriptions of samples corresponding to 23 species of gilled mushrooms in the Agaricus and Lepiota Family. The data has been drawn from *The Audubon Society Field Guide to North American Mushrooms*. Each species can be classified as definitely edible, definitely poisonous, or of unknown edibility and not recommended. Although this dataset was originally contributed to the UCI Machine Learning repository nearly 30 years ago, mushroom hunting (otherwise known as "shrooming") is enjoying new peaks in popularity. Learning which features could spell certain death and which are most palatable is the goal for this dataset of mushroom characteristics.
 
+![](Mod3_imgs/Picture1.png)
+
 ## Data Information
 
 The data set contains 8124 rows and the following 23 features:
@@ -62,6 +64,8 @@ The data set contains 8124 rows and the following 23 features:
 `population`: abundant(a), clustered(c), numerous(n), scattered(s), several(v), solitary(y)
 
 `habitat`: grasses(g), leaves(l), meadows(m), paths(p), urban(u), waste(w), woods(d)
+
+![](Mod3_imgs/Picture2.png)
 
 # **Project PreWork** 
 
@@ -114,6 +118,8 @@ Exploratory Data Analysis, or EDA, is an integral part of understanding the Mush
 
 **Habitat**: Mushrooms found in grasses and woody areas are likely to be edible. Mushrooms found on paths and leaves are likely to be poisonous. 
 
+![](Mod3_imgs/Picture4.png)
+
 # **Model Preparation**
 
 The mushroom dataset is primarily categorical data. These data types are not ideal for model building, therefore, the data must be converted into numerical data types. This can be done using Label and One-Hot encoding. 
@@ -160,6 +166,8 @@ The following three models are completed using Logistic regression, however they
 * The LR Lasso model performs variable selection by shrinking some coefficients. 
 
 With the proceeding models you will see the following: AUC - ROC curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. It tells how much the model is capable of distinguishing between classes. Higher the AUC, better the model is at predicting 0s as 0s and 1s as 1s. By analogy, Higher the AUC, better the model is at distinguishing between mushroom edibility.
+
+![](Mod3_imgs/Picture3.png)
 
 ## LR Lasso
 
